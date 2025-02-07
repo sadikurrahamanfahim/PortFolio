@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #00bfff; /* Deep Sky Blue */
+  --secondary: #87ceeb; /* Sky Blue */
+  --accent: #ffd700; /* Gold */
+  --background: #0a192f; /* Dark Blue */
+  --foreground: #ffffff; /* White */
+}
+
+@font-face {
+  font-family: "PressStart2P";
+  src: url("/fonts/PressStart2P-Regular.ttf") format("truetype");
+}
+
+body {
+  font-family: "Rajdhani", sans-serif;
+  @apply bg-background text-foreground;
+  cursor: url("/cursor.png"), auto;
+  color: var(--foreground);
+}
+
+.gaming-bg {
+  background-image: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)),
+    url("https://camo.githubusercontent.com/ec6e701d5e31850db670217ea82f9f4757ce95be5313b17c3b6f57ea591887d5/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f7375706572666f6c696f2f696d6167652f75706c6f61642f76313632303638393937392f36383734373437303733336132663266363932653730363936653639366436373265363336663664326636663732363936373639366536313663373332663633333632663333333332663633333232663633333633333333363333323330363536343635333833323636333036353330363336353634333736343335333733303634363236353333363133313636333332653637363936365f796a756832732e676966");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.glassmorphism {
+  background: rgba(10, 25, 47, 0.7);
+  backdrop-filter: blur(10px);
+  border: 2px solid var(--primary);
+  transition: all 0.3s ease;
+}
+
+.glassmorphism:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px var(--primary);
+}
+
+.neon-text {
+  text-shadow: 0 0 5px var(--primary), 0 0 10px var(--primary), 0 0 20px var(--primary);
+  color: var(--foreground);
+}
+
+.neon-border {
+  box-shadow: 0 0 5px var(--primary), 0 0 10px var(--primary), inset 0 0 5px var(--primary), inset 0 0 10px
+    var(--primary);
+}
+
+.pixel-corners {
+  clip-path: polygon(
+    0 4px,
+    4px 0,
+    calc(100% - 4px) 0,
+    100% 4px,
+    100% calc(100% - 4px),
+    calc(100% - 4px) 100%,
+    4px 100%,
+    0 calc(100% - 4px)
+  );
+}
+
+.scroll-indicator {
+  @apply absolute bottom-10 left-1/2 transform -translate-x-1/2;
+  width: 30px;
+  height: 50px;
+  border: 2px solid var(--primary);
+  border-radius: 15px;
+}
+
+.scroll-indicator::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  transform: translateX(-50%);
+  animation: scroll 2s infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translate(-50%, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    transform: translate(-50%, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.pixel-btn {
+  @apply bg-primary text-background px-6 py-3 text-lg font-semibold transition-all duration-300 pixel-corners;
+  font-family: "PressStart2P", cursive;
+  box-shadow: 0 0 10px var(--primary), inset 0 0 10px var(--primary);
+  image-rendering: pixelated;
+}
+
+.pixel-btn:hover {
+  @apply bg-secondary;
+  box-shadow: 0 0 20px var(--secondary), inset 0 0 20px var(--secondary);
+}
+
+.nav-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--secondary);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.nav-item:hover::after {
+  transform: translateX(0);
+}
+
+.pixel-border {
+  border-style: solid;
+  border-width: 4px;
+  border-image-slice: 2;
+  border-image-width: 2;
+  border-image-outset: 0;
+  border-image-source: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='6' height='6'><path d='M0 2h2v2H0zM2 0h2v2H2zM4 2h2v2H4zM2 4h2v2H2z' fill='%2300BFFF' /></svg>");
+  border-image-repeat: stretch;
+  image-rendering: pixelated;
+  transition: all 0.3s ease;
+}
+
+.pixel-border:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px var(--primary);
+}
+
