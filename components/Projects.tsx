@@ -10,21 +10,21 @@ const projects = {
       description:
         "Integrated assets into a Christmas-themed word puzzle game, designed the majority of assets using Figma, and implemented time functionality. (Under Review)",
       image: "/images/JingleWrods.png",
-      link: "https://example.com/jingle-word",
+      link: "https://play.google.com/store/apps/details?id=com.DiyaBariLabs.JingleWord&hl=en-US&ah=njehxEQWkRkN6WpzaCXjmAxk8H8",
     },
     {
       title: "Pacman Genjam",
       description:
         "Made a remix of Pacman to participate in the crazy webgame gamejam (2024) in collaboration with a team member.",
       image: "/images/PacMan.png",
-      link: "https://example.com/pacman-genjam",
+      link: "https://masupasu.itch.io/pacman-genjam",
     },
     {
       title: "Vanish Words",
       description:
         "Developed a 2D Unity game with random alphabet sorting, dynamic feedback, and endless gameplay mechanics.",
-      image: "/vanish-words.jpg",
-      link: "https://example.com/vanish-words",
+      image: "/images/VanishWords.png",
+      link: "https://fupsee.itch.io/vanish-words",
     },
   ],
   WebDevelopment: [
@@ -32,7 +32,7 @@ const projects = {
       title: "Portfolio Website",
       description: "Developed a responsive portfolio website using React and Next.js, showcasing projects and skills.",
       image: "/portfolio-website.jpg",
-      link: "https://example.com/portfolio",
+      link: "https://sadikurrahaman.vercel.app/",
     },
   ],
   Design: [
