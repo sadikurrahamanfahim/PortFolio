@@ -11,11 +11,17 @@ export default function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <h1
-          className="text-4xl md:text-6xl font-bold mb-4 text-primary neon-text"
+        <h3
+          className="text-4xl md:text-4xl mb-4 text-primary neon-text"
           style={{ fontFamily: "'Press Start 2P', cursive" }}
         >
-          MD SADIKUR RAHAMAN
+          Hi!
+        </h3>
+        <h1
+          className="text-4xl md:text-5xl font-bold mb-4 text-primary neon-text"
+          style={{ fontFamily: "'Press Start 2P', cursive" }}
+        >
+          It's me SADIKUR RAHAMAN
         </h1>
         <h2 className="text-2xl md:text-3xl mb-8 text-secondary neon-text">Unity Game Developer</h2>
         <motion.button

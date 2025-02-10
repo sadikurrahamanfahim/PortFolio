@@ -29,9 +29,9 @@ const projects = {
   ],
   WebDevelopment: [
     {
-      title: "Portfolio Website",
-      description: "Developed a responsive portfolio website using React and Next.js, showcasing projects and skills.",
-      image: "/portfolio-website.jpg",
+      title: "Movie Freaks!",
+      description: "Developed a movie showcase website based on ASP.NET MVC.",
+      image: "/images/MovieFreaks.png",
       link: "https://sadikurrahaman.vercel.app/",
     },
   ],
