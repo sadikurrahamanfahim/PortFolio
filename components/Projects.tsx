@@ -4,39 +4,44 @@ import { motion } from "framer-motion"
 import Image from "next/image"
 
 const projects = {
-  gameDevelopment: [
+  GameDevelopment: [
     {
       title: "Jingle Word",
       description:
         "Integrated assets into a Christmas-themed word puzzle game, designed the majority of assets using Figma, and implemented time functionality. (Under Review)",
       image: "/jingle-word.jpg",
+      link: "https://example.com/jingle-word",
     },
     {
       title: "Pacman Genjam",
       description:
         "Made a remix of Pacman to participate in the crazy webgame gamejam (2024) in collaboration with a team member.",
-      image: "/pacman-genjam.jpg",
+      image: "/images/PacMan.png",
+      link: "https://example.com/pacman-genjam",
     },
     {
       title: "Vanish Words",
       description:
         "Developed a 2D Unity game with random alphabet sorting, dynamic feedback, and endless gameplay mechanics.",
       image: "/vanish-words.jpg",
+      link: "https://example.com/vanish-words",
     },
   ],
-  webDevelopment: [
+  WebDevelopment: [
     {
       title: "Portfolio Website",
       description: "Developed a responsive portfolio website using React and Next.js, showcasing projects and skills.",
       image: "/portfolio-website.jpg",
+      link: "https://example.com/portfolio",
     },
   ],
-  design: [
+  Design: [
     {
       title: "Game UI Design",
       description:
         "Created user interface designs for mobile games using Figma, focusing on user experience and visual appeal.",
       image: "/game-ui-design.jpg",
+      link: "https://example.com/game-ui-design",
     },
   ],
 }
@@ -90,30 +95,32 @@ export default function Projects() {
                   viewport={{ once: true }}
                   whileHover={{ scale: 1.05 }}
                 >
-                  <Image
-                    src={project.image || "/placeholder.svg"}
-                    alt={project.title}
-                    width={400}
-                    height={225}
-                    className="w-full h-48 object-cover"
-                  />
-                  <div className="p-6">
-                    <h4
-                      className="text-xl font-semibold mb-2 text-foreground"
-                      style={{
-                        fontFamily: "'Press Start 2P', cursive",
-                        fontSize: "0.9rem",
-                        letterSpacing: "0.1em",
-                        textShadow: "2px 2px 0px #000",
-                        imageRendering: "pixelated",
-                        color: "var(--primary)",
-                        textTransform: "uppercase",
-                      }}
-                    >
-                      {project.title}
-                    </h4>
-                    <p className="text-sm text-gray-400">{project.description}</p>
-                  </div>
+                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="block">
+                    <Image
+                      src={project.image || "/placeholder.svg"}
+                      alt={project.title}
+                      width={400}
+                      height={225}
+                      className="w-full h-48 object-cover"
+                    />
+                    <div className="p-6">
+                      <h4
+                        className="text-xl font-semibold mb-2 text-foreground"
+                        style={{
+                          fontFamily: "'Press Start 2P', cursive",
+                          fontSize: "0.9rem",
+                          letterSpacing: "0.1em",
+                          textShadow: "2px 2px 0px #000",
+                          imageRendering: "pixelated",
+                          color: "var(--primary)",
+                          textTransform: "uppercase",
+                        }}
+                      >
+                        {project.title}
+                      </h4>
+                      <p className="text-sm text-gray-400">{project.description}</p>
+                    </div>
+                  </a>
                 </motion.div>
               ))}
             </div>
@@ -123,4 +130,3 @@ export default function Projects() {
     </section>
   )
 }
-
