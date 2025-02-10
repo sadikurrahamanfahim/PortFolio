@@ -9,7 +9,7 @@ const projects = {
       title: "Jingle Word",
       description:
         "Integrated assets into a Christmas-themed word puzzle game, designed the majority of assets using Figma, and implemented time functionality. (Under Review)",
-      image: "/jingle-word.jpg",
+      image: "/images/JingleWrods.png",
       link: "https://example.com/jingle-word",
     },
     {
