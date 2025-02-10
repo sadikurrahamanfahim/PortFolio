@@ -21,7 +21,7 @@ export default function Header() {
     >
       <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
         <button
-          onClick={() => window.open("/resume.pdf", "_blank")}
+          onClick={() => window.open("/images/Sadikur Rahaman.pdf", "_blank")}
           className="text-2xl font-bold text-primary neon-text pixel-corners p-2 bg-transparent border-none cursor-pointer"
           style={{ fontFamily: "'Press Start 2P', cursive" }}
         >
