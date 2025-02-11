@@ -21,7 +21,7 @@ export default function Hero() {
           className="text-4xl md:text-5xl font-bold mb-4 text-primary neon-text"
           style={{ fontFamily: "'Press Start 2P', cursive" }}
         >
-          It's me SADIKUR RAHAMAN
+          It's me Sadikur Rahaman
         </h1>
         <h2 className="text-2xl md:text-3xl mb-8 text-secondary neon-text">Unity Game Developer</h2>
         <motion.button
