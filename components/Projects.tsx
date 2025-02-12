@@ -37,10 +37,10 @@ const projects = {
   ],
   Design: [
     {
-      title: "Game UI Design",
+      title: "Jingle Wrods UI Design",
       description:
-        "Created user interface designs for mobile games using Figma, focusing on user experience and visual appeal.",
-      image: "/game-ui-design.jpg",
+        "Created user interface designs for mobile game(Jingle Words) using Figma, focusing on user experience and visual appeal.",
+      image: "/images/JingleWrods_Figma.png",
       link: "https://example.com/game-ui-design",
     },
   ],
