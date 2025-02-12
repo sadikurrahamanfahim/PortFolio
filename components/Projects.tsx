@@ -41,7 +41,7 @@ const projects = {
       description:
         "Created user interface designs for mobile game(Jingle Words) using Figma, focusing on user experience and visual appeal.",
       image: "/images/JingleWrods_Figma.png",
-      link: "https://example.com/game-ui-design",
+      link: "https://www.figma.com/proto/weWe19ycKoUCVDuI1IM6su/Jingle-Wrods?node-id=1-171&t=EWwkAqYBlOHrKVof-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
     },
   ],
 }
