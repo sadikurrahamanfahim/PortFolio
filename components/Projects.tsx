@@ -44,7 +44,7 @@ const projects = {
       link: "https://www.figma.com/proto/weWe19ycKoUCVDuI1IM6su/Jingle-Wrods?node-id=1-171&t=EWwkAqYBlOHrKVof-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
     },
     {
-      title: "Jingle Wrods UI Design",
+      title: "Khuda Lagche! UI Design",
       description:
         "Created user interface designs for Android Application called Khuda Lagche! using Figma by collaborating with team members, focusing on user experience and visual appeal.",
       image: "/images/KhudaLagche_Figma.png",
