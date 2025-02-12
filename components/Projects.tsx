@@ -39,9 +39,16 @@ const projects = {
     {
       title: "Jingle Wrods UI Design",
       description:
-        "Created user interface designs for mobile game(Jingle Words) using Figma, focusing on user experience and visual appeal.",
+        "Created user interface designs for mobile game(Jingle Words) using Figma by collaborating with team members, focusing on user experience and visual appeal.",
       image: "/images/JingleWrods_Figma.png",
       link: "https://www.figma.com/proto/weWe19ycKoUCVDuI1IM6su/Jingle-Wrods?node-id=1-171&t=EWwkAqYBlOHrKVof-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
+    },
+    {
+      title: "Jingle Wrods UI Design",
+      description:
+        "Created user interface designs for Android Application called Khuda Lagche! using Figma by collaborating with team members, focusing on user experience and visual appeal.",
+      image: "/images/KhudaLagche_Figma.png",
+      link: "https://www.figma.com/proto/L5hy2UYzH5oyUtz8FktsND/Khuda-Lagche!?node-id=1-1579&t=LSW2ZCO409wIfvfb-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A1579",
     },
   ],
 }
