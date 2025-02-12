@@ -32,7 +32,15 @@ const projects = {
       title: "Movie Freaks!",
       description: "Developed a movie showcase website based on ASP.NET MVC.",
       image: "/images/MovieFreaks.png",
-      link: "https://sadikurrahaman.vercel.app/",
+      link: "https://github.com/sadikurrahamanfahim/eTickets",
+    },
+  ],
+  AndroidDevelopment: [
+    {
+      title: "Khuda Lagche!",
+      description: "A Food delivery Android Application mainly focused on UI principles.",
+      image: "/images/KhudaLagche.png",
+      link: "https://github.com/sadikurrahamanfahim/khuda_Lagche",
     },
   ],
   Design: [
