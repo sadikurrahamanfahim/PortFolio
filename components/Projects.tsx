@@ -34,6 +34,12 @@ const projects = {
       image: "/images/MovieFreaks.png",
       link: "https://github.com/sadikurrahamanfahim/eTickets",
     },
+    {
+      title: "DataVize",
+      description: "Built a Streamlit-based web application offering data preprocessing, visualization, and classification techniques.",
+      image: "/images/DataVize.png",
+      link: "https://github.com/sadikurrahamanfahim/DataVize",
+    },
   ],
   AndroidDevelopment: [
     {
