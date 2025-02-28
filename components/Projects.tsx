@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import Image from "next/image"
+import { useState } from "react"
 
 const projects = {
   GameDevelopment: [
@@ -68,6 +69,8 @@ const projects = {
 }
 
 export default function Projects() {
+  const [hoveredProject, setHoveredProject] = useState<string | null>(null)
+
   return (
     <section id="projects" className="py-20">
       <div className="container mx-auto px-6">
@@ -109,14 +112,16 @@ export default function Projects() {
               {categoryProjects.map((project, index) => (
                 <motion.div
                   key={project.title}
-                  className="glassmorphism overflow-hidden pixel-border"
+                  className="glassmorphism overflow-hidden pixel-border relative"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.2 }}
                   viewport={{ once: true }}
                   whileHover={{ scale: 1.05 }}
+                  onHoverStart={() => setHoveredProject(project.title)}
+                  onHoverEnd={() => setHoveredProject(null)}
                 >
-                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="block">
+                  <div className="relative">
                     <Image
                       src={project.image || "/placeholder.svg"}
                       alt={project.title}
@@ -124,24 +129,34 @@ export default function Projects() {
                       height={225}
                       className="w-full h-48 object-cover"
                     />
-                    <div className="p-6">
-                      <h4
-                        className="text-xl font-semibold mb-2 text-foreground"
-                        style={{
-                          fontFamily: "'Press Start 2P', cursive",
-                          fontSize: "0.9rem",
-                          letterSpacing: "0.1em",
-                          textShadow: "2px 2px 0px #000",
-                          imageRendering: "pixelated",
-                          color: "var(--primary)",
-                          textTransform: "uppercase",
-                        }}
-                      >
-                        {project.title}
-                      </h4>
-                      <p className="text-sm text-gray-400">{project.description}</p>
-                    </div>
-                  </a>
+                    {hoveredProject === project.title && (
+                      <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                        <button
+                          className="px-4 py-2 bg-primary text-white rounded-md font-pixel text-sm neon-text"
+                          onClick={() => window.open(project.link, "_blank")}
+                        >
+                          Click for Live Preview
+                        </button>
+                      </div>
+                    )}
+                  </div>
+                  <div className="p-6">
+                    <h4
+                      className="text-xl font-semibold mb-2 text-foreground"
+                      style={{
+                        fontFamily: "'Press Start 2P', cursive",
+                        fontSize: "0.9rem",
+                        letterSpacing: "0.1em",
+                        textShadow: "2px 2px 0px #000",
+                        imageRendering: "pixelated",
+                        color: "var(--primary)",
+                        textTransform: "uppercase",
+                      }}
+                    >
+                      {project.title}
+                    </h4>
+                    <p className="text-sm text-gray-400">{project.description}</p>
+                  </div>
                 </motion.div>
               ))}
             </div>
