@@ -4,12 +4,11 @@ import { motion } from "framer-motion"
 
 const experiences = [
   {
-    company: "Object Canvas Technology",
-    position: "Internee",
-    duration: "12/2023 – 01/2024",
-    location: "Darus Salam, Dhaka, Bangladesh",
-    description:
-      "Completed my internship at OCT (Object Canvas Technology) on ASP.NET. Gained hands-on experience about live projects of MVC pattern.",
+    company: "Qiulin Technologies",
+    position: "Operations Manager",
+    duration: "03/2025 – 07/2025",
+    location: "Uttara, Dhaka, Bangladesh",
+    description: "Managed end-to-end operations including employee oversight, client relations, performance tracking, and strategic decision-making directly under the CEO.",
   },
   {
     company: "Riseup Labs",
@@ -17,6 +16,14 @@ const experiences = [
     duration: "09/2024 – 11/2024",
     location: "Uttara, Dhaka, Bangladesh",
     description: "Was a trainee of Hire and Train program at Riseup Labs. Learned game development on Unity engine.",
+  },
+  {
+    company: "Object Canvas Technology",
+    position: "Internee",
+    duration: "12/2023 – 01/2024",
+    location: "Darus Salam, Dhaka, Bangladesh",
+    description:
+      "Completed my internship at OCT (Object Canvas Technology) on ASP.NET. Gained hands-on experience about live projects of MVC pattern.",
   },
 ]
 
